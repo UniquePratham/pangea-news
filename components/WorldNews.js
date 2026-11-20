@@ -11,7 +11,7 @@ import {
   Button, // Import Button component from Chakra UI
 } from "@chakra-ui/react";
 
-const apikey = "17e5786f01adec6fc3b5c4421cf147d1";
+const apikey = process.env.NEXT_PUBLIC_NEWS_API_KEY;
 
 const WorldNews = () => {
   const [articles, setArticles] = useState([]);
